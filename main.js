@@ -20,3 +20,13 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
     }
 
 }
+
+const body = document.querySelector("body")
+
+body.addEventListener("keypress", (e) => {
+    if(e.key === "q") {
+        tocaSom("#som_tecla_pom")
+    } else if (e.key === "w") {
+        tocaSom("#som_tecla_clap")
+    }
+})
